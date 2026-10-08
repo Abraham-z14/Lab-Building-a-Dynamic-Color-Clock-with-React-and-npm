@@ -18,3 +18,15 @@ A React application that displays the current date and time and changes its colo
 
 ```bash
 npm install
+```
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+5. Open the local URL shown in the terminal in your browser.
+
+## Screenshot
+
+![Dynamic Color Clock](screenshots/clock-screenshot.png)
