@@ -4,7 +4,7 @@ import "./App.css";
 
 function App() {
   const [time, setTime] = useState(new Date());
-
+// Update the current time every second so the clock stays accurate.
   useEffect(() => {
     const timer = setInterval(() => {
       setTime(new Date());
@@ -12,7 +12,7 @@ function App() {
 
     return () => clearInterval(timer);
   }, []);
-
+// Convert the current time into a hue so the clock colors shift throughout the day.
   const secondsOfDay =
     time.getHours() * 3600 + time.getMinutes() * 60 + time.getSeconds();
   const hue = Math.round((secondsOfDay / 86400) * 360);
